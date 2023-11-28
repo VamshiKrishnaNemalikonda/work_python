@@ -1,5 +1,5 @@
 def function1():
-    print("from function1")
+    print("** from function1 **")
 
 def main():
     function1()
