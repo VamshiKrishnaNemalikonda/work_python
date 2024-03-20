@@ -17,9 +17,13 @@ Including another URLconf
 from django.contrib import admin
 # include necessary libraries
 from django.urls import path, include
+from .views import home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # add apis urls
-    path('api/', include("apis.urls"))
+    path('nfotest/api', home_page),
+    path('apis/', include("apis.urls")),
+    path('nfohelm/api/v1/', include("helmprocessor.urls")),
+    path('nfo/api/v1/', include("helm.urls")),
+
 ]

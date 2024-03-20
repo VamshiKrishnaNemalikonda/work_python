@@ -10,9 +10,9 @@ pip install djangorestframework
 pip3 install pyhelm
 pip3 install kubernetes
 
+python3 manage.py startapp apis //creates new app named apis
 
 python3 manage.py migrations
 python3 manage.py migrate
 python3 manage.py runserver
 
-python3 manage.py startapp api
