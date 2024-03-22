@@ -21,9 +21,9 @@ from .views import home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('nfotest/api', home_page),
-    path('apis/', include("apis.urls")),
-    path('nfohelm/api/v1/', include("helmprocessor.urls")),
-    path('nfo/api/v1/', include("helm.urls")),
+    path('nfo/api/v1/', home_page),
+    #path('apis/', include("apis.urls")),
+    #path('nfohelm/api/v1/', include("helmprocessor.urls")),
+    #path('nfo/api/v1/', include("helm.urls")),
 
 ]
